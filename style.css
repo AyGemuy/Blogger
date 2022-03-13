@@ -1,3 +1,4 @@
+/*<![CDATA[*/
 /* Font Body and Heading */ @font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4ARMQ_m87A.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0OIpQlx3QUlC5A4PNr4DRG.woff) format('woff')} @font-face{font-family: 'Noto Sans';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZuyDzW0.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0TIpQlx3QUlC5A4PNr4Az5ZtyH.woff) format('woff')} @font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0IIpQlx3QUlC5A4PNb4Q.woff) format('woff')} @font-face{font-family: 'Noto Sans';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v11/o-0NIpQlx3QUlC5A4PNjXhFlYA.woff) format('woff')}
 
 /* Source Code Font */ @font-face {font-family: 'Fira Mono';font-style: normal;font-weight: 400;font-display: swap;src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtQIg.woff) format('woff'), url(https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2')}
@@ -175,7 +176,7 @@
 /* pop up subscribe youtube channel by Cerdasin */
 @keyframes show_notif-{0%{transform:translateX(100%)}40%{transform:translateX(-10%)}80%{transform:translateX(0%)}100%{opacity:1;pointer-events:auto;transform:translateX(-10px)}}
 @keyframes hide_notif-{0%{transform:translateX(-10px)}40%{transform:translateX(0%)}80%{transform:translateX(-10%)}100%{transform:translateX(calc(100% + 100px))}}
-.notif-wrap{position:fixed;z-index:9999999;right:55px;bottom:20px;animation:show_notif- 0.8s ease forwards;box-shadow:0 5px 12px rgba(0,0,0,0.2);border-radius:10px;background:#fff;padding:10px;border-left:5px solid #f09800;width:300px;align-items:center;justify-content:space-between;display:none}
+.notif-wrap{position:fixed;z-index:9999999;right:55px;bottom:20px;animation:show_notif- 0.8s ease forwards;box-shadow:0 5px 12px rgba(0,0,0,0.2);border-radius:10px;background:#fff;padding:10px;border-left:5px solid #0b57cf;width:300px;align-items:center;justify-content:space-between;display:none}
 .notif-wrap.hide{animation:hide_notif- 0.8s ease forwards}
 .notif-content{display:flex;align-items:center}
 .notif-icon .notiflogo{max-width:60px;border-radius:100%;transition:all 0.3s ease}
@@ -288,7 +289,7 @@ perspective:1000px}
 font-family: Iceland;
 font-weight: bold;
 font-size: 25px;
-border-radius: 5px;
+border-radius: 0px 50px 50px 50px;
 animation-name: cmPulse;
 animation-duration: 30s;
 animation-iteration-count: infinite;
@@ -312,7 +313,6 @@ animation-timing-function: ease-in-out;
   75%        {fill: #00ffff}
   100%       {fill: #ffffff}
 }
-
 .line {
   animation: svg-color 30s ease-in-out infinite;
   filter:drop-shadow(1px 1px 1px rgb(0 0 0 / 0.5))
@@ -327,16 +327,17 @@ animation-timing-function: ease-in-out;
   cursor: pointer;
 }
 .fab-wrapper .fab-icon-holder {
-  width: 30px;
+  width: 60px;
   height: 30px;
-  border-radius: 0px 50px 50px 50px;
-  background-color: white;
+  border-radius: 25px 5px 25px 5px;
+  background:var(--contentB);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 .fab-wrapper .fab-icon-holder.fab {
   width: 40px;
   height: 40px;
-  background-color: white;
+  border-radius: 0px 50px 50px 50px;
+  background:var(--contentB);
 }
 .fab-wrapper .fab-icon-holder:hover {
   opacity: 0.8;
